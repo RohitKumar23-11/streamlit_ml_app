@@ -1,0 +1,2 @@
+# streamlit_ml_app
+In this streamlit app I try to build a ML web app which can tell the user how much chance they have to develop any heart disease in future. I used random forest classifier as my ML algorithm to predict the output I also check various other classification algorithms to check their performance in the dataset and find that random forest perform the best among them so I chose it for my web app predictions.
