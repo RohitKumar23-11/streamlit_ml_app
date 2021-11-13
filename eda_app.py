@@ -31,8 +31,8 @@ def load_data(data):
 def run_eda_app():
     st.subheader("From Exploratory Data Analysis")
     #df = pd.read_csv(r"D:\projects dataset\Employee.csv")
-    df = pd.read_csv(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/heart.csv")
-    df1 = pd.read_csv(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/clean_heart.csv")
+    df = pd.read_csv(r"https://raw.githubusercontent.com/RohitKumar23-11/streamlit_ml_app/main/heart.csv")
+    df1 = pd.read_csv(r"https://raw.githubusercontent.com/RohitKumar23-11/streamlit_ml_app/main/clean_heart.csv")
     # st.dataframe(df)
     
     #image = Image.open(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/eda.jpg")
