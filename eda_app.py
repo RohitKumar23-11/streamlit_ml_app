@@ -35,8 +35,8 @@ def run_eda_app():
     df1 = pd.read_csv(r"https://raw.githubusercontent.com/RohitKumar23-11/streamlit_ml_app/main/clean_heart.csv")
     # st.dataframe(df)
     
-    #image = Image.open(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/eda.jpg")
-    #st.image(image,use_column_width=True, width=750,caption="EDA representation image")
+    image = Image.open(r"https://github.com/RohitKumar23-11/streamlit_ml_app/main/eda.jpg")
+    st.image(image,use_column_width=True, width=750,caption="EDA representation image")
     
     submenu = st.sidebar.selectbox("Submenu",['Descriptive','Plots'])
     if submenu == "Descriptive":
