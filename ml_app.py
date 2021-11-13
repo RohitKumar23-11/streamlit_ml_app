@@ -50,7 +50,7 @@ def load_model(model_file):
 
 def run_ml_app():
 	st.subheader("Machine Learning Section. :computer:")
-	df = pd.read_pickle(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/randomforestclassifier_1")
+	df = pd.read_pickle(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/randomforestclassifier_1.pkl")
 	loaded_model = load_model(df)
 
 	with st.expander("Attributes Info"):
