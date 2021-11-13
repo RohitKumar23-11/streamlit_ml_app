@@ -50,8 +50,9 @@ def load_model(model_file):
 
 def run_ml_app():
 	st.subheader("Machine Learning Section. :computer:")
-	df = pd.read_pickle(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/randomforestclassifier_1.pkl")
-	loaded_model = load_model(df)
+	with open(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/randomforestclassifier_1.pkl','rb) as f:
+		  data = pickle.load(f)
+	loaded_model = load_model(data)
 
 	with st.expander("Attributes Info"):
 		st.markdown(attrib_info,unsafe_allow_html=True)
