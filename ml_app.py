@@ -50,7 +50,7 @@ def load_model(model_file):
 
 def run_ml_app():
 	st.subheader("Machine Learning Section. :computer:")
-	with open(r"https://github.com/RohitKumar23-11/streamlit_ml_app/blob/main/randomforestclassifier_1.pkl",'rb') as f:
+	with open(r"https://github.com/RohitKumar23-11/streamlit_ml_app/main/randomforestclassifier_1.pkl",'rb') as f:
 		  data = pickle.load(f)
 	loaded_model = load_model(data)
 
