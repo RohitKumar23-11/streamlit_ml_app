@@ -49,7 +49,8 @@ def load_model(model_file):
 
 def run_ml_app():
 	st.subheader("Machine Learning Section. :computer:")
-	loaded_model = load_model(r"https://github.com/RohitKumar23-11/streamlit_ml_app/main/randomforestclassifier_1.pkl")
+	df = pd.read_pickle(r"https://github.com/RohitKumar23-11/streamlit_ml_app/main/randomforestclassifier_1.pkl")
+	loaded_model = load_model(df)
 
 	with st.expander("Attributes Info"):
 		st.markdown(attrib_info,unsafe_allow_html=True)
