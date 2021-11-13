@@ -3,6 +3,7 @@ import joblib
 import os
 import numpy as np
 from PIL import Image
+import pandas as pd
 
 attrib_info = """
 #### Attribute Information:
